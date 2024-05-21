@@ -8,7 +8,6 @@ import 'package:weather_application/components/temperature_widget.dart';
 import 'package:weather_application/controllers/weather_state.dart';
 import 'package:weather_application/controllers/weather_store.dart';
 import 'package:weather_application/data/data_to_file.dart';
-import 'package:weather_application/data/forecast_weather.dart';
 import 'package:weather_application/models/other_info_model.dart';
 import 'package:weather_application/models/temperature_model.dart';
 import 'package:weather_application/models/weather_model.dart';

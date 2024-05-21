@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:weather_application/models/forecast_model.dart';
 
 class ForecastWeather {
-  Future getForecastWeather() async {
+  Future<ForecastModel> getForecastWeather() async {
     const apiKey = String.fromEnvironment("API_KEY");
     final userCoordinates = UserCoordinates();
     final coordinates = await userCoordinates.getUserCoordinates();
