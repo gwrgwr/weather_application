@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_application/feature_current_weather/controllers/weather_store.dart';
-import 'package:weather_application/feature_current_weather/models/temperature_model.dart';
+import 'package:weather_application/controllers/weather_store.dart';
+import 'package:weather_application/models/temperature_model.dart';
 
 class TemperatureWidget extends StatefulWidget {
   const TemperatureWidget({required this.temperature, super.key});

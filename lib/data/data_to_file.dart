@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:path_provider/path_provider.dart';
-import 'package:weather_application/feature_current_weather/models/weather_info.dart';
+import 'package:weather_application/models/weather_info.dart';
 
 class DataToFile {
   Future<String> get _localPath async {

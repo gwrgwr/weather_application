@@ -1,6 +1,6 @@
 import 'package:geocoding/geocoding.dart';
-import 'package:weather_application/feature_current_weather/data/user_coordinantes.dart';
-import 'package:weather_application/feature_current_weather/models/placemark_model.dart';
+import 'package:weather_application/data/user_coordinantes.dart';
+import 'package:weather_application/models/placemark_model.dart';
 
 class UserCity {
   Future<PlacemarkModel> getUserCity() async {

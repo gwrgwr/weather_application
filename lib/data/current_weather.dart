@@ -1,9 +1,9 @@
 import 'package:http/http.dart' as http;
-import 'package:weather_application/feature_current_weather/data/user_coordinantes.dart';
-import 'package:weather_application/feature_current_weather/models/other_info_model.dart';
-import 'package:weather_application/feature_current_weather/models/temperature_model.dart';
-import 'package:weather_application/feature_current_weather/models/weather_info.dart';
-import 'package:weather_application/feature_current_weather/models/weather_model.dart';
+import 'package:weather_application/data/user_coordinantes.dart';
+import 'package:weather_application/models/other_info_model.dart';
+import 'package:weather_application/models/temperature_model.dart';
+import 'package:weather_application/models/weather_info.dart';
+import 'package:weather_application/models/weather_model.dart';
 
 class CurrentWeather {
   Future<List<WeatherInfo>> getWeather() async {
@@ -20,6 +20,7 @@ class CurrentWeather {
       TemperatureModel.fromJson(response.body),
       OtherInfo.fromJson(response.body)
     ]);
+    print(Weather.fromJson(response.body));
     return weatherList;
   }
 }

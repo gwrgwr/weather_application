@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:weather_application/feature_current_weather/components/app_bar_shimmer.dart';
-import 'package:weather_application/feature_current_weather/controllers/city_placemarks_store.dart';
-import 'package:weather_application/feature_current_weather/controllers/city_placemarks_states.dart';
-import 'package:weather_application/feature_current_weather/controllers/weather_store.dart';
-import 'package:weather_application/feature_current_weather/data/data_to_file.dart';
+import 'package:weather_application/components/app_bar_shimmer.dart';
+import 'package:weather_application/controllers/city_placemarks_store.dart';
+import 'package:weather_application/controllers/city_placemarks_states.dart';
+import 'package:weather_application/controllers/weather_store.dart';
+import 'package:weather_application/data/data_to_file.dart';
 
 class AppBarWidget extends StatefulWidget {
   AppBarWidget({required this.weatherStore, super.key});

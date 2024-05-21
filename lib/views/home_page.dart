@@ -1,24 +1,23 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:lottie/lottie.dart';
-import 'package:weather_application/feature_current_weather/components/app_bar_widget.dart';
-import 'package:weather_application/feature_current_weather/components/other_info.dart';
-import 'package:weather_application/feature_current_weather/components/shimmer_widget.dart';
-import 'package:weather_application/feature_current_weather/components/temperature_widget.dart';
-import 'package:weather_application/feature_current_weather/controllers/weather_state.dart';
-import 'package:weather_application/feature_current_weather/controllers/weather_store.dart';
-import 'package:weather_application/feature_current_weather/data/data_to_file.dart';
-import 'package:weather_application/feature_current_weather/models/other_info_model.dart';
-import 'package:weather_application/feature_current_weather/models/temperature_model.dart';
-import 'package:weather_application/feature_current_weather/models/weather_model.dart';
-import 'package:weather_application/feature_current_weather/utils/weather_description.dart';
-import 'package:weather_application/feature_current_weather/utils/weather_icon.dart';
-import 'package:weather_application/feature_current_weather/utils/weather_title.dart';
+import 'package:weather_application/components/app_bar_widget.dart';
+import 'package:weather_application/components/other_info.dart';
+import 'package:weather_application/components/shimmer_widget.dart';
+import 'package:weather_application/components/temperature_widget.dart';
+import 'package:weather_application/controllers/weather_state.dart';
+import 'package:weather_application/controllers/weather_store.dart';
+import 'package:weather_application/data/data_to_file.dart';
+import 'package:weather_application/data/forecast_weather.dart';
+import 'package:weather_application/models/other_info_model.dart';
+import 'package:weather_application/models/temperature_model.dart';
+import 'package:weather_application/models/weather_model.dart';
+import 'package:weather_application/utils/weather_description.dart';
+import 'package:weather_application/utils/weather_icon.dart';
+import 'package:weather_application/utils/weather_title.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();

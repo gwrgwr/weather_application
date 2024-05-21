@@ -9,5 +9,6 @@ class WeatherDescription {
     'thunderstorm': 'Tempestade',
     'snow': 'Nevando',
     'mist': 'Nevoeiro',
+    'overcast clouds': 'Nuvens nubladas',
   };
 }

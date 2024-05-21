@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:unixtime/unixtime.dart';
-import 'package:weather_application/feature_current_weather/controllers/weather_store.dart';
-import 'package:weather_application/feature_current_weather/models/other_info_model.dart';
+import 'package:weather_application/controllers/weather_store.dart';
+import 'package:weather_application/models/other_info_model.dart';
 
 class OtherInfoWidget extends StatefulWidget {
   const OtherInfoWidget({required this.otherInfo, super.key});

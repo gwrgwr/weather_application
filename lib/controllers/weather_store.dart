@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:weather_application/feature_current_weather/controllers/weather_state.dart';
-import 'package:weather_application/feature_current_weather/data/current_weather.dart';
-import 'package:weather_application/feature_current_weather/data/data_to_file.dart';
-import 'package:weather_application/feature_current_weather/models/other_info_model.dart';
-import 'package:weather_application/feature_current_weather/models/temperature_model.dart';
-import 'package:weather_application/feature_current_weather/models/weather_info.dart';
-import 'package:weather_application/feature_current_weather/models/weather_model.dart';
+import 'package:weather_application/controllers/weather_state.dart';
+import 'package:weather_application/data/current_weather.dart';
+import 'package:weather_application/data/data_to_file.dart';
+import 'package:weather_application/models/other_info_model.dart';
+import 'package:weather_application/models/temperature_model.dart';
+import 'package:weather_application/models/weather_info.dart';
+import 'package:weather_application/models/weather_model.dart';
 
 class WeatherStore extends ValueNotifier<WeatherState> {
   WeatherStore() : super(WeatherInitialState());

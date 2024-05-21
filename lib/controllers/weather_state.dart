@@ -1,4 +1,4 @@
-import 'package:weather_application/feature_current_weather/models/weather_info.dart';
+import 'package:weather_application/models/weather_info.dart';
 
 class WeatherState {}
 
