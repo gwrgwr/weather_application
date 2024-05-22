@@ -1,6 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
-
 import 'package:weather_application/models/weather_info.dart';
 
 class Weather extends WeatherInfo {

@@ -9,18 +9,21 @@ class CurrentWeather {
   Future<List<WeatherInfo>> getWeather() async {
     final coordinates = await UserCoordinates().getUserCoordinates();
     const apiKey = String.fromEnvironment("API_KEY");
-    final response = await http.get(
-      Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appid=$apiKey',
-      ),
-    );
     List<WeatherInfo> weatherList = [];
-    weatherList.addAll([
-      Weather.fromJson(response.body),
-      TemperatureModel.fromJson(response.body),
-      OtherInfo.fromJson(response.body)
-    ]);
-    print(Weather.fromJson(response.body));
+    try {
+      final response = await http.get(
+        Uri.parse(
+          'https://api.openweathermap.org/data/2.5/weather?lat=${coordinates.latitude}&lon=${coordinates.longitude}&appid=$apiKey',
+        ),
+      );
+      weatherList.addAll([
+        Weather.fromJson(response.body),
+        TemperatureModel.fromJson(response.body),
+        OtherInfo.fromJson(response.body)
+      ]);
+    } catch (e) {
+      print(e.toString());
+    }
     return weatherList;
   }
 }

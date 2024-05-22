@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                     if (state is WeatherLoadingState) {
                       return const ShimmerWidget();
                     }
-              
+
                     if (state is WeatherSuccessState) {
                       List<Widget> list = [
                         TemperatureWidget(
@@ -152,11 +152,11 @@ class _HomePageState extends State<HomePage> {
                         ],
                       );
                     }
-              
+
                     if (state is WeatherErrorState) {
                       return Text(state.message);
                     }
-              
+
                     return Container();
                   },
                 ),
