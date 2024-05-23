@@ -1,6 +1,6 @@
 # weather_application
 
-A new Flutter project.
+Flutter Project that shows current Weather Data getting user location using geolocator package.
 
 ## Getting Started
 
